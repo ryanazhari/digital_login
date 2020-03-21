@@ -1,0 +1,136 @@
+body {
+    background-image: url(img/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'ml';
+    src: url(font/ml.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'mr';
+    src: url(font/mr.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'mm';
+    src: url(font/mm.ttf) format('truetype');
+}
+
+section.web-navbar {
+    border-bottom: 1px solid #5AB8D1;
+}
+
+section.web-navbar .sidenav-trigger {
+    float: right;
+    color: #5AB8D1;
+}
+
+section.web-navbar nav {
+    background: none;
+    box-shadow: none;
+    margin: 12px 0;
+}
+
+section.web-navbar li a{
+    font-family: 'ml';
+    color: #8BCBDC;
+    padding: 0 24px;
+    font-size: 14px;
+}
+
+section.web-navbar .btn-login {
+    border: 2px solid #24DCD9;
+    border-radius: 24px;
+    padding: 12px 32px;
+    background: none;
+    color: #8BCBDC;
+    margin-left: 12px;
+    transition: .3s ease-in;
+}
+
+section.web-navbar .btn-login:hover {
+    background: #5AB8D1;
+    cursor: pointer;
+    color: #f0f0f0;
+}
+
+section.web-navbar ul.sidenav {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section.web-content .box {
+    padding: 24px;
+    margin-left: -42px;
+    border-radius: 4px;
+    margin-top: 42px;
+    background-color: rgba(0,0,0,.1);
+}
+
+section.web-content h1 {
+    font-family: 'mm';
+    font-size: 82px;
+    color: #24dcd9;
+    text-shadow: -2px 6px 8px rgba(36, 220, 217, 0.24);
+    margin: 0;
+}
+
+section.web-content p {
+    font-family: 'ml';
+    font-size: 14px;
+    color: #4797ac;
+}
+
+section .box-input input {
+    color: #4797AC;
+    margin: 0 !important;
+    padding: 0;
+}
+
+a.btn-submit {
+    border: 2px solid #24DCD9;
+    border-radius: 24px;
+    padding: 10px 70px;
+    font-family: 'mr';
+    font-size: 16px;
+    display: inline-block;
+    color: #4797ac;
+    transition: .3s;
+}
+
+a.btn-submit:hover {
+    background-color: #4797ac;
+    color: #f0f0f0;
+}
+
+@media (max-width: 991px) { 
+    section.web-content .box {
+        margin: 24px auto;
+        text-align: center;
+    }
+
+    section.web-content .box h1 {
+        font-size: 72px;
+    }
+
+    section.web-navbar .list-btn {
+        width: 80%;
+        margin-top: 12px;
+    }
+
+    section.web-navbar .btn-login {
+        margin-left: 10%;;
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    section.web-content .box h1 {
+        font-size: 52px;
+    }
+}
+
